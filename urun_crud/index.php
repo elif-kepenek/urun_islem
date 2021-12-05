@@ -32,9 +32,7 @@
 
   $urunSorgulama = $baglanti->prepare("SELECT * FROM urun");
   $urunSorgulama->execute();
-  while ($urunListe = $urunSorgulama->fetch(PDO::FETCH_ASSOC)) {
-    // code...
-  
+  while ($urunListe = $urunSorgulama->fetch(PDO::FETCH_ASSOC)) {  
 
 ?>
 
