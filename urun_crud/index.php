@@ -18,7 +18,7 @@
 		<a href="urun-ekle.php"><button type="submit" class="btn btn-info">Ürün Ekle</button></a>
   <thead>
     <tr>
-      <th scope="col">Sıra</th>
+      <th scope="col">ID</th>
       <th scope="col">Ürün Adı</th>
       <th scope="col">Açıklama</th>
       <th scope="col">Fiyat</th>
@@ -37,12 +37,12 @@
 ?>
 
     <tr>
-      <td><?php echo $urunListe['sira'] ?></td>
+      <td><?php echo $urunListe['id'] ?></td>
       <td><?php echo $urunListe['baslik'] ?></td>
       <td><?php echo $urunListe['aciklama'] ?></td>
       <td><?php echo $urunListe['fiyat'] ?></td>
       <td><a href="urun-duzenle.php?id=<?php echo $urunListe['id'] ?>"><button type="submit" class="btn btn-success">Düzenle</button></a></td>
-      <td><a href="islem.php?urunsil"><button type="submit" class="btn btn-danger">Sil</button></a></td>
+      <td><a href="urun-sil-islem.php?urunSil&id=<?php echo $urunListe['id'] ?>"><button type="submit" class="btn btn-danger">Sil</button></a></td>
     </tr>
 
 

@@ -18,7 +18,7 @@ if(isset($_POST['urunDuzenle'])){
 	));
 
 	if($update){
-		echo 'Başarılı bir şekilde veritabanında düzenlendi.';
+		header("Location:index.php?durum=true");
 	}else{
 		echo 'Bir sorunla karşılaştık!';
 	}

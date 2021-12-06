@@ -17,7 +17,7 @@ if(isset($_POST['urunKaydet'])){
 	));
 
 	if($insert){
-		echo 'Başarılı bir şekilde veritabanına yüklendi.';
+		header("Location:index.php?durum=true");
 	}else{
 		echo 'Bir sorunla karşılaştık!';
 	}
