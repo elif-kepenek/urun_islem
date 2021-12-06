@@ -1,4 +1,5 @@
 <?php 
+
 include 'baglanti.php';
 
 if(isset($_POST['urunKaydet'])){
@@ -22,9 +23,5 @@ if(isset($_POST['urunKaydet'])){
 		echo 'Bir sorunla karşılaştık!';
 	}
 }
-
-
-
-
 
 ?>

@@ -1,4 +1,5 @@
 <?php 
+
 include 'baglanti.php';
 
 if(isset($_GET['urunSil'])){
@@ -14,8 +15,5 @@ if(isset($_GET['urunSil'])){
 		echo 'Bir sorunla karşılaştık!';
 	}
 }
-
-
-
 
 ?>
