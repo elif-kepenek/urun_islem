@@ -1,5 +1,6 @@
 <?php 
   include 'baglanti.php';
+  //error_reporting(0);
 ?>
 
 
@@ -13,12 +14,17 @@
 </head>
 <body>
 	<div class="container">
+<?php if($_GET['durum']=='true'){?>
+
+  <div class="alert bg-success"><b style="color: white;">İşlem başarılı.</b></div><?php
+} ?>
 
 	<table class="table">
 		<a href="urun-ekle.php"><button type="submit" class="btn btn-info">Ürün Ekle</button></a>
   <thead>
     <tr>
       <th scope="col">ID</th>
+      <th scope="col">Sıra</th>
       <th scope="col">Ürün Adı</th>
       <th scope="col">Açıklama</th>
       <th scope="col">Fiyat</th>
@@ -38,6 +44,7 @@
 
     <tr>
       <td><?php echo $urunListe['id'] ?></td>
+      <td><?php echo $urunListe['sira'] ?></td>
       <td><?php echo $urunListe['baslik'] ?></td>
       <td><?php echo $urunListe['aciklama'] ?></td>
       <td><?php echo $urunListe['fiyat'] ?></td>
